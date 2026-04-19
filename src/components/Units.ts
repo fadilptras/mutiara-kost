@@ -54,8 +54,8 @@ export function renderUnits(): string {
             </div>
             <div class="swiper unit-slider w-full h-full">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800" class="w-full h-full object-cover" alt="Unit slide 1"></div>
-                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800" class="w-full h-full object-cover" alt="Unit slide 2"></div>
+                <div class="swiper-slide"><img src="./images/kamar1/foto1.jpg" class="w-full h-full object-cover" alt="Tampak Depan Kamar"></div>
+                <div class="swiper-slide"><img src="./images/kamar1/foto2.jpg" class="w-full h-full object-cover" alt="Fasilitas Kamar"></div>
               </div>
               <div class="swiper-button-next !w-8 !h-8 !after:text-[14px] bg-black/30 backdrop-blur-md rounded-full text-white"></div>
               <div class="swiper-button-prev !w-8 !h-8 !after:text-[14px] bg-black/30 backdrop-blur-md rounded-full text-white"></div>

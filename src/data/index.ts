@@ -159,24 +159,6 @@ export const UNITS: Unit[] = [
   },
 ]
 
-export const GALLERY_SLIDE_1_IMAGES = [
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-]
-
-export const GALLERY_SLIDE_2_IMAGES = [
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-]
-
 export const PRICING_FEATURES: PricingFeature[] = [
   {
     title: 'Privasi Terjaga',

@@ -1,8 +1,11 @@
-import { GALLERY_SLIDE_1_IMAGES, GALLERY_SLIDE_2_IMAGES } from '../data'
+import { GALLERY_SLIDE_1, GALLERY_SLIDE_2 } from '../data/image'
+import type { GalleryImage } from '../data/image'
 
 export function renderGallery(): string {
-  const slide1 = renderSlide(GALLERY_SLIDE_1_IMAGES, 'Fasilitas Utama', 1)
-  const slide2 = renderSlide(GALLERY_SLIDE_2_IMAGES, 'Area Kost', 7)
+  // Kita passing langsung data object GalleryImage-nya
+  // Parameter angka 1 dan 7 di bawah adalah startIndex (hanya untuk fallback urutan foto jika tidak ada caption)
+  const slide1 = renderSlide(GALLERY_SLIDE_1, 1)
+  const slide2 = renderSlide(GALLERY_SLIDE_2, 7)
 
   return /* html */ `
     <section
@@ -58,18 +61,25 @@ export function renderGallery(): string {
 }
 
 function renderSlide(
-  images: string[],
-  badge: string,
+  images: GalleryImage[], // <-- Menggunakan tipe GalleryImage yang berisi {src, alt, badge, caption}
   startIndex: number
 ): string {
   const items = images
     .map(
-      (src, idx) => /* html */ `
+      (img, idx) => /* html */ `
       <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md aspect-[4/3]">
-        <img src="${src}" alt="Fasilitas Mutiara Kost" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <img src="${img.src}" alt="${img.alt || 'Fasilitas Mutiara Kost'}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110">
+        
         <div class="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <span class="mb-2 inline-block rounded-full bg-sky-500/90 px-3 py-1 text-[10px] font-bold text-white uppercase tracking-wider">${badge}</span>
-          <p class="text-center text-xs sm:text-sm font-medium text-white/90">Keterangan foto ${startIndex + idx} — kenyamanan maksimal untuk penghuni.</p>
+          
+          <span class="mb-2 inline-block rounded-full bg-sky-500/90 px-3 py-1 text-[10px] font-bold text-white uppercase tracking-wider">
+            ${img.badge || 'Fasilitas'}
+          </span>
+          
+          <p class="text-center text-xs sm:text-sm font-medium text-white/90">
+            ${img.caption || `Keterangan foto ${startIndex + idx} — kenyamanan maksimal untuk penghuni.`}
+          </p>
+
         </div>
       </div>`
     )

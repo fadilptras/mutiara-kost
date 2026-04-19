@@ -26,11 +26,11 @@ export interface GalleryImage {
 // ─── KAMAR 01 ────────────────────────────────────────────────────────────────
 export const KAMAR_1_IMAGES: UnitImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800',
+    src: './images/kamar1/foto1.jpg',
     alt: 'Kamar 01 - tampak keseluruhan',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800',
+    src: './images/kamar1/foto2.jpg',
     alt: 'Kamar 01 - kasur dan lemari',
   },
   // Tambahkan foto Kamar 01 di sini ↓
@@ -39,12 +39,16 @@ export const KAMAR_1_IMAGES: UnitImage[] = [
 // ─── KAMAR 02 ────────────────────────────────────────────────────────────────
 export const KAMAR_2_IMAGES: UnitImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800',
-    alt: 'Kamar 02 - tampak keseluruhan',
+    src: './images/kamar2/1.jpeg',
+    alt: 'Kamar 02 - tampak depan',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800',
-    alt: 'Kamar 02 - area meja belajar',
+    src: './images/kamar2/2.jpeg',
+    alt: 'Kamar 02 - area dalam',
+  },
+  {
+    src: './images/kamar2/3.jpeg',
+    alt: 'Kamar 02 - kamar mandi dalam',
   },
   // Tambahkan foto Kamar 02 di sini ↓
 ]
