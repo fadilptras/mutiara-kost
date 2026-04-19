@@ -1,0 +1,20 @@
+{
+  "name": "mutiara-kost",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/alpinejs": "^3.13.10",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.1",
+    "swiper": "^11.1.3"
+  }
+}
