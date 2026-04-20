@@ -1,7 +1,7 @@
 import type { Unit, FAQ, LocationPoint, PricingFeature } from '../types'
 
-export const WHATSAPP_NUMBER = 'yournumber'
-export const MAPS_URL = 'https://maps.google.com'
+export const WHATSAPP_NUMBER = '6281804953761'
+export const MAPS_URL = 'https://maps.app.goo.gl/FsyqMDN5QjKpUQJq7'
 export const MAPS_EMBED_SRC =
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.816959644849!2d106.81569506955438!3d-6.613607299586276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e2be97360f%3A0x9363c01f7d9f53e3!2sMutiara%20Kost%20Exclusive!5e0!3m2!1sid!2sid!4v1775919640198!5m2!1sid!2sid'
 export const YOUTUBE_EMBED_SRC =
@@ -21,19 +21,19 @@ export const UNITS: Unit[] = [
       },
       {
         title: 'Full Furnished',
-        description: 'Kasur, lemari, meja belajar, dan rak sepatu.',
+        description: 'Kasur, lemari, meja belajar, wastafel dan rak sepatu.',
       },
       {
         title: 'Full AC',
         description: 'Kamar difasilitasi AC untuk kenyamanan suhu ruangan.',
       },
       {
-        title: 'CCTV & Parkiran',
-        description: 'Keamanan 24 jam terpantau CCTV & area parkir.',
+        title: 'Free WiFi 24 Jam',
+        description: 'Koneksi internet ngebut & stabil untuk nugas atau streaming.',
       },
       {
-        title: 'Wastafel & Area Jemur',
-        description: 'Tersedia wastafel cuci piring & area khusus menjemur.',
+        title: 'Fasilitas & Keamanan',
+        description: 'Keamanan CCTV 24 jam, parkir motor dan area jemur.',
       },
       {
         title: 'Listrik Token',
@@ -54,23 +54,23 @@ export const UNITS: Unit[] = [
       },
       {
         title: 'Full Furnished',
-        description: 'Kasur, lemari, meja belajar, dan rak sepatu.',
+        description: 'Kasur, lemari, meja belajar, wastafel dan rak sepatu.',
       },
       {
         title: 'Full AC',
         description: 'Kamar difasilitasi AC untuk kenyamanan suhu ruangan.',
       },
       {
-        title: 'CCTV & Parkiran',
-        description: 'Keamanan 24 jam terpantau CCTV & area parkir luas.',
+        title: 'Free WiFi 24 Jam',
+        description: 'Koneksi internet ngebut & stabil untuk nugas atau streaming.',
       },
       {
-        title: 'Wastafel & Area Jemur',
-        description: 'Tersedia wastafel cuci piring & area khusus menjemur.',
+        title: 'Fasilitas & Keamanan',
+        description: 'Keamanan CCTV 24 jam, parkir motor dan area jemur.',
       },
       {
         title: 'Listrik Token',
-        description: 'Sistem prabayar mandiri, gratis biaya air bulanan.',
+        description: 'Biaya listrik menyesuaikan pemakaian masing-masing penghuni.',
       },
     ],
   },
@@ -87,23 +87,23 @@ export const UNITS: Unit[] = [
       },
       {
         title: 'Full Furnished',
-        description: 'Kasur, lemari, meja belajar, dan rak sepatu.',
+        description: 'Kasur, lemari, meja belajar, wastafel dan rak sepatu.',
       },
       {
         title: 'Full AC',
         description: 'Kamar difasilitasi AC untuk kenyamanan suhu ruangan.',
       },
       {
-        title: 'CCTV & Parkiran',
-        description: 'Keamanan 24 jam terpantau CCTV & area parkir luas.',
+        title: 'Free WiFi 24 Jam',
+        description: 'Koneksi internet ngebut & stabil untuk nugas atau streaming.',
       },
       {
-        title: 'Wastafel & Area Jemur',
-        description: 'Tersedia wastafel cuci piring & area khusus menjemur.',
+        title: 'Fasilitas & Keamanan',
+        description: 'Keamanan CCTV 24 jam, parkir motor dan area jemur.',
       },
       {
         title: 'Listrik Token',
-        description: 'Sistem prabayar mandiri, gratis biaya air bulanan.',
+        description: 'Biaya listrik menyesuaikan pemakaian masing-masing penghuni.',
       },
     ],
   },
@@ -186,12 +186,12 @@ export const FAQS: FAQ[] = [
   {
     question: 'Maksimal penghuni satu kamar?',
     answer:
-      'Harga reguler berlaku untuk 1 orang per kamar. Jika ingin dihuni berdua (maksimal 2 orang), akan dikenakan sedikit biaya tambahan untuk air dan fasilitas lainnya.',
+      'Satu kamar bisa dihuni maksimal oleh 2 orang tanpa ada biaya tambahan. Namun, wajib mengonfirmasi dan melapor terlebih dahulu kepada pihak pengelola kos.',
   },
   {
     question: 'Bagaimana dengan fasilitas parkir?',
     answer:
-      'Kami menyediakan area parkir motor yang luas dan aman di dalam gerbang, gratis untuk seluruh penghuni. Area parkir juga dipantau CCTV 24 jam untuk keamanan ekstra.',
+      'Kami menyediakan area parkir motor yang aman di dalam gerbang (kapasitas maksimal 3 motor untuk 3 kamar). Area parkir juga dipantau CCTV 24 jam untuk keamanan ekstra.',
   },
   {
     question: 'Apakah minimal sewa tahunan?',
@@ -201,7 +201,7 @@ export const FAQS: FAQ[] = [
   {
     question: 'Ada fasilitas dapur bersama?',
     answer:
-      'Ya, kami menyediakan area dapur bersama yang bisa digunakan seluruh penghuni. Dapur sudah dilengkapi dengan kompor, kulkas komunal, dan wastafel cuci piring.',
+      'Saat ini kami tidak menyediakan fasilitas dapur bersama. Namun, setiap penghuni diperbolehkan membawa kompor kecil atau kompor portabel sendiri untuk digunakan di kamar.',
   },
   {
     question: 'Bagaimana layanan kebersihannya?',
@@ -216,11 +216,18 @@ export const FAQS: FAQ[] = [
   {
     question: 'Apakah biaya sewa sudah termasuk listrik?',
     answer:
-      'Biaya sewa termasuk air bersih, WiFi, dan kebersihan area umum. Untuk listrik, setiap kamar memiliki meteran token prabayar masing-masing sehingga pemakaian lebih transparan.',
+      'Biaya sewa sudah *include* (termasuk) air bersih, WiFi, dan kebersihan area umum. Untuk listrik, setiap kamar memiliki meteran token prabayar masing-masing sehingga pemakaian dibayar mandiri.',
   },
 ]
 
 export const LOCATION_POINTS: LocationPoint[] = [
+    {
+    title: '2 Menit Jalan Kaki',
+    subtitle: 'Ke minimarket & ATM.',
+    colorClass: 'bg-emerald-50',
+    iconColor: 'text-emerald-600',
+    svgPath: 'M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z',
+  },
   {
     title: '5 Menit ke Univ. Pakuan',
     subtitle: 'Strategis untuk mahasiswa.',
@@ -228,13 +235,6 @@ export const LOCATION_POINTS: LocationPoint[] = [
     iconColor: 'text-sky-600',
     svgPath:
       'M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z M12 14v7',
-  },
-  {
-    title: '2 Menit Jalan Kaki',
-    subtitle: 'Ke minimarket & ATM.',
-    colorClass: 'bg-emerald-50',
-    iconColor: 'text-emerald-600',
-    svgPath: 'M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z',
   },
   {
     title: '10 Menit ke Botani Sq',
@@ -252,8 +252,8 @@ export const LOCATION_POINTS: LocationPoint[] = [
       'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z',
   },
   {
-    title: '5 Menit ke RS PMI',
-    subtitle: 'Dekat fasilitas kesehatan.',
+    title: 'Dekat RS BMC & Puskesmas',
+    subtitle: 'Akses cepat fasilitas kesehatan.',
     colorClass: 'bg-red-50',
     iconColor: 'text-red-600',
     svgPath:
