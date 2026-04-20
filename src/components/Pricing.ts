@@ -56,7 +56,7 @@ export function renderPricing(): string {
           <!-- Features -->
           <div class="lg:col-span-7 lg:pl-6">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-              Langkah pertamamu menuju <span class="text-sky-600">ketenangan.</span>
+              Langkah pertamamu menuju <span class="text-sky-600">kenyamanan.</span>
             </h2>
             <p class="text-lg text-slate-600 mb-8 leading-relaxed">
               Kami tahu pencarian tempat tinggal bisa melelahkan. Di Mutiara Kost, kami menawarkan

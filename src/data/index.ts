@@ -29,7 +29,7 @@ export const UNITS: Unit[] = [
       },
       {
         title: 'CCTV & Parkiran',
-        description: 'Keamanan 24 jam terpantau CCTV & area parkir luas.',
+        description: 'Keamanan 24 jam terpantau CCTV & area parkir.',
       },
       {
         title: 'Wastafel & Area Jemur',
@@ -37,7 +37,7 @@ export const UNITS: Unit[] = [
       },
       {
         title: 'Listrik Token',
-        description: 'Sistem prabayar mandiri, gratis biaya air bulanan.',
+        description: 'Biaya listrik menyesuaikan pemakaian masing-masing penghuni.',
       },
     ],
   },

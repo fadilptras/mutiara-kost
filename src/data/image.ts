@@ -19,54 +19,115 @@ export interface UnitImage {
 export interface GalleryImage {
   src: string
   alt: string
-  badge?: string       // label kategori, misal "Kamar", "Dapur", dll
-  caption?: string     // keterangan foto
+  badge?: string       
+  caption?: string     
 }
 
-// ─── KAMAR 01 ────────────────────────────────────────────────────────────────
 export const KAMAR_1_IMAGES: UnitImage[] = [
   {
-    src: './images/kamar1/foto1.jpg',
-    alt: 'Kamar 01 - tampak keseluruhan',
-  },
-  {
-    src: './images/kamar1/foto2.jpg',
-    alt: 'Kamar 01 - kasur dan lemari',
-  },
-  // Tambahkan foto Kamar 01 di sini ↓
-]
-
-// ─── KAMAR 02 ────────────────────────────────────────────────────────────────
-export const KAMAR_2_IMAGES: UnitImage[] = [
-  {
-    src: './images/kamar2/1.jpeg',
+    src: '/images/kamar1/1.jpeg',
     alt: 'Kamar 02 - tampak depan',
   },
   {
-    src: './images/kamar2/2.jpeg',
+    src: '/images/kamar1/2.jpeg',
     alt: 'Kamar 02 - area dalam',
   },
   {
-    src: './images/kamar2/3.jpeg',
-    alt: 'Kamar 02 - kamar mandi dalam',
+    src: '/images/kamar1/3.jpeg',
+    alt: 'Kamar 02 - kamar',
   },
-  // Tambahkan foto Kamar 02 di sini ↓
+  {
+    src: '/images/kamar1/4.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar1/5.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar1/6.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar1/7.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar1/8.jpeg',
+    alt: 'Kamar 02 - kamar',
+  }
 ]
 
-// ─── KAMAR 03 ────────────────────────────────────────────────────────────────
+export const KAMAR_2_IMAGES: UnitImage[] = [
+  {
+    src: '/images/kamar2/1.jpeg',
+    alt: 'Kamar 02 - tampak depan',
+  },
+  {
+    src: '/images/kamar2/2.jpeg',
+    alt: 'Kamar 02 - area dalam',
+  },
+  {
+    src: '/images/kamar2/3.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar2/4.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar2/5.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar2/6.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar2/7.jpeg',
+    alt: 'Kamar 02 - kamar',
+  },
+  {
+    src: '/images/kamar2/8.jpeg',
+    alt: 'Kamar 02 - kamar',
+  }  
+]
+
 export const KAMAR_3_IMAGES: UnitImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800',
-    alt: 'Kamar 03 - tampak keseluruhan',
+    src: '/images/kamar3/1.jpeg',
+    alt: 'Kamar 03 - tampak depan',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800',
-    alt: 'Kamar 03 - kamar mandi dalam',
+    src: '/images/kamar3/2.jpeg',
+    alt: 'Kamar 03 - area dalam',
   },
-  // Tambahkan foto Kamar 03 di sini ↓
+  {
+    src: '/images/kamar3/3.jpeg',
+    alt: 'Kamar 03 - kamar',
+  },
+  {
+    src: '/images/kamar3/4.jpeg',
+    alt: 'Kamar 03 - kamar',
+  },
+  {
+    src: '/images/kamar3/5.jpeg',
+    alt: 'Kamar 03 - kamar',
+  },
+  {
+    src: '/images/kamar3/6.jpeg',
+    alt: 'Kamar 03 - kamar',
+  },
+  {
+    src: '/images/kamar3/7.jpeg',
+    alt: 'Kamar 03 - kamar',
+  },
+  {
+    src: '/images/kamar3/8.jpeg',
+    alt: 'Kamar 03 - kamar',
+  }  
 ]
 
-// ─── KONTRAKAN 01 ─────────────────────────────────────────────────────────────
 export const KONTRAKAN_1_IMAGES: UnitImage[] = [
   {
     src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800',
@@ -108,86 +169,83 @@ export const UNIT_IMAGES: Record<string, UnitImage[]> = {
 
 export const GALLERY_SLIDE_1: GalleryImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-    alt: 'Kamar kost tampak dalam',
-    badge: 'Kamar',
-    caption: 'Kamar luas dengan pencahayaan alami yang baik.',
+    src: 'images/gallery/1.jpeg', // Ganti path gambarnya nanti
+    alt: 'Akses dari jalan',
+    badge: 'Akses',
+    caption: 'Akses gang dan jalan masuk menuju kost yang mudah dijangkau dan aman.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-    alt: 'Area tidur',
-    badge: 'Kamar',
-    caption: 'Kasur nyaman dengan bantal berkualitas.',
+    src: 'images/gallery/2.jpeg',
+    alt: 'Tampak depan kost',
+    badge: 'Eksterior',
+    caption: 'Tampak depan Mutiara Kost yang memiliki desain rapi dan lingkungan bersih.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-    alt: 'Meja belajar',
-    badge: 'Fasilitas',
-    caption: 'Meja belajar ergonomis untuk produktivitas.',
+    src: 'images/gallery/3.jpeg', 
+    alt: 'Area garasi parkir',
+    badge: 'Parkir',
+    caption: 'Area garasi yang luas dan aman untuk memarkirkan kendaraan penghuni.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-    alt: 'Kamar mandi dalam',
-    badge: 'Kamar Mandi',
-    caption: 'Kamar mandi bersih dengan shower dan kloset duduk.',
+    src: 'images/gallery/4.jpeg',
+    alt: 'Area cuci kaki dan wudhu',
+    badge: 'Fasilitas Umum',
+    caption: 'Area khusus untuk cuci-cuci, cuci kaki, atau wudhu yang airnya mengalir lancar.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600',
-    alt: 'Lemari pakaian',
-    badge: 'Fasilitas',
-    caption: 'Lemari besar dengan kapasitas penyimpanan luas.',
+    src: 'images/gallery/5.jpeg',
+    alt: 'Akses tangga',
+    badge: 'Area Umum',
+    caption: 'Akses tangga penghubung antar lantai yang kokoh dengan pencahayaan baik.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600',
-    alt: 'AC unit',
-    badge: 'Fasilitas',
-    caption: 'Full AC untuk kenyamanan suhu ruangan.',
-  },
-  // Tambahkan foto untuk Slide 1 di sini ↓
+    src: 'images/gallery/6.jpeg',
+    alt: 'Area ruang tamu',
+    badge: 'Ruang Santai',
+    caption: 'Ruang tamu yang nyaman untuk bersantai atau sekadar menerima tamu kunjungan.',
+  }
 ]
 
 export const GALLERY_SLIDE_2: GalleryImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600',
-    alt: 'Area dapur bersama',
-    badge: 'Area Umum',
-    caption: 'Dapur bersama lengkap dengan kompor dan kulkas.',
+    src: 'images/gallery/7.jpeg',
+    alt: 'Lubang angin sirkulasi',
+    badge: 'Sirkulasi',
+    caption: 'Lubang angin dan ventilasi memastikan sirkulasi udara di dalam kost tetap segar dan sehat.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600',
-    alt: 'Area parkir',
-    badge: 'Parkir',
-    caption: 'Parkir motor luas dan aman 24 jam.',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600',
+    src: 'images/gallery/8.jpeg',
     alt: 'Area jemuran',
+    badge: 'Fasilitas Umum',
+    caption: 'Area jemuran khusus dengan sirkulasi udara bagus agar pakaian cepat kering.',
+  },
+  {
+    src: 'images/gallery/9.jpeg',
+    alt: 'Foto 3 Kamar',
+    badge: 'Kamar',
+    caption: 'Tampilan variasi 3 tipe kamar kami yang nyaman dan siap huni.',
+  },
+  {
+    src: 'images/gallery/10.jpeg',
+    alt: 'Area lorong kamar 1',
     badge: 'Area Umum',
-    caption: 'Area jemur bersih dengan sirkulasi udara baik.',
+    caption: 'Lorong area kamar pertama yang selalu dijaga kebersihannya setiap hari.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600',
-    alt: 'Tampak depan kost',
-    badge: 'Eksterior',
-    caption: 'Tampak depan Mutiara Kost yang bersih dan modern.',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600',
-    alt: 'Lorong kost',
+    src: 'images/gallery/11.jpeg',
+    alt: 'Area lorong kamar 2',
     badge: 'Area Umum',
-    caption: 'Lorong terawat dan selalu bersih.',
+    caption: 'Akses lorong kedua yang tenang dengan pencahayaan alami yang cukup.',
   },
   {
-    src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600',
-    alt: 'Area wastafel',
+    src: 'images/gallery/12.jpeg',
+    alt: 'Peralatan dan kelengkapan',
     badge: 'Fasilitas',
-    caption: 'Wastafel cuci piring tersedia untuk semua penghuni.',
-  },
-  // Tambahkan foto untuk Slide 2 di sini ↓
+    caption: 'Ketersediaan berbagai peralatan bersama untuk menunjang kemudahan aktivitas sehari-hari.',
+  }
 ]
 
 // Daftarkan semua slide gallery di sini
-// Untuk tambah slide baru: buat array GALLERY_SLIDE_3 lalu tambahkan di sini
 export const GALLERY_SLIDES: GalleryImage[][] = [
   GALLERY_SLIDE_1,
   GALLERY_SLIDE_2,
