@@ -2,7 +2,43 @@ import { WHATSAPP_NUMBER } from '../data'
 
 export function renderHero(): string {
   return /* html */ `
-    <section class="relative w-full h-[100vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section 
+      x-data="{
+        scrollToUnits() {
+          const target = document.getElementById('units');
+          if (!target) return;
+          
+          const targetPos = target.getBoundingClientRect().top + window.scrollY;
+          const startPos = window.scrollY;
+          const distance = targetPos - startPos;
+          
+          // DURASI SCROLL: 1200 milidetik (1.2 detik)
+          // Semakin besar angkanya, semakin lambat & santai scroll-nya
+          const duration = 1200; 
+          let start = null;
+          
+          const animation = (currentTime) => {
+            if (start === null) start = currentTime;
+            const timeElapsed = currentTime - start;
+            const progress = Math.min(timeElapsed / duration, 1);
+            
+            // Efek Easing (easeInOutCubic) agar gerakan mulus di awal dan akhir
+            const ease = progress < 0.5 
+              ? 4 * progress * progress * progress 
+              : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+              
+            window.scrollTo(0, startPos + distance * ease);
+            
+            if (timeElapsed < duration) {
+              requestAnimationFrame(animation);
+            }
+          };
+          
+          requestAnimationFrame(animation);
+        }
+      }"
+      class="relative w-full h-[100vh] min-h-[600px] flex items-center justify-center overflow-hidden"
+    >
       
       <style>
         @keyframes kenburns {
@@ -42,8 +78,9 @@ export function renderHero(): string {
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a 
-            href="#units" 
-            class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold transition-all duration-300 shadow-lg transform hover:-translate-y-1"
+            href="#units"
+            @click.prevent="scrollToUnits()"
+            class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold transition-all duration-300 shadow-lg transform hover:-translate-y-1 cursor-pointer"
           >
             Lihat Tipe Kamar
           </a>
