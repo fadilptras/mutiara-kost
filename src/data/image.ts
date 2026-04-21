@@ -130,11 +130,11 @@ export const KAMAR_3_IMAGES: UnitImage[] = [
 
 export const KONTRAKAN_1_IMAGES: UnitImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800',
+    src: 'images/kontrakan1/1.jpeg',
     alt: 'Kontrakan 01 - tampak depan',
   },
   {
-    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800',
+    src: 'images/kontrakan1/2.jpeg',
     alt: 'Kontrakan 01 - ruang dalam',
   },
   // Tambahkan foto Kontrakan 01 di sini ↓
@@ -143,11 +143,11 @@ export const KONTRAKAN_1_IMAGES: UnitImage[] = [
 // ─── KONTRAKAN 02 ─────────────────────────────────────────────────────────────
 export const KONTRAKAN_2_IMAGES: UnitImage[] = [
   {
-    src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800',
+    src: 'images/kontrakan2/1.jpeg',
     alt: 'Kontrakan 02 - tampak depan',
   },
   {
-    src: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800',
+    src: 'images/kontrakan2/2.jpeg',
     alt: 'Kontrakan 02 - area halaman',
   },
   // Tambahkan foto Kontrakan 02 di sini ↓
@@ -223,19 +223,19 @@ export const GALLERY_SLIDE_2: GalleryImage[] = [
     src: 'images/gallery/9.jpeg',
     alt: 'Foto 3 Kamar',
     badge: 'Kamar',
-    caption: 'Tampilan variasi 3 tipe kamar kami yang nyaman dan siap huni.',
+    caption: 'Tampilan 3 kamar kami yang nyaman dan siap huni.',
   },
   {
     src: 'images/gallery/10.jpeg',
     alt: 'Area lorong kamar 1',
     badge: 'Area Umum',
-    caption: 'Lorong area kamar pertama yang selalu dijaga kebersihannya setiap hari.',
+    caption: 'Lorong area kamar yang selalu dijaga kebersihannya setiap hari.',
   },
   {
     src: 'images/gallery/11.jpeg',
     alt: 'Area lorong kamar 2',
     badge: 'Area Umum',
-    caption: 'Akses lorong kedua yang tenang dengan pencahayaan alami yang cukup.',
+    caption: 'Akses lorong yang tenang dengan pencahayaan alami yang cukup.',
   },
   {
     src: 'images/gallery/12.jpeg',

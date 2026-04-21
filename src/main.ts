@@ -8,6 +8,7 @@ import 'swiper/css/effect-fade'
 
 import { renderNavbar } from './components/Navbar'
 import { renderHero } from './components/Hero'
+// import { UnitPricing } from './components/UnitPricing'
 import { renderUnits, getUnitSectionData } from './components/Units'
 import { renderPricing } from './components/Pricing'
 import { renderGallery } from './components/Gallery'
