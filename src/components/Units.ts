@@ -29,7 +29,7 @@ export function renderUnits(): string {
   const unitPanels = UNITS.map(renderUnitPanel).join('')
 
   return /* html */ `
-    <section class="py-20 bg-white relative overflow-hidden" x-data="unitSection()">
+    <section id="units" class="py-20 bg-white relative overflow-hidden" x-data="unitSection()">
       <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
       <div class="absolute bottom-0 left-0 w-80 h-80 bg-sky-50 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 

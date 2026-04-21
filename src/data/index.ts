@@ -1,6 +1,6 @@
 import type { Unit, FAQ, LocationPoint, PricingFeature } from '../types'
 
-export const WHATSAPP_NUMBER = '6281804953761'
+export const WHATSAPP_NUMBER = '6281291550783'
 export const MAPS_URL = 'https://maps.app.goo.gl/FsyqMDN5QjKpUQJq7'
 export const MAPS_EMBED_SRC =
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.816959644849!2d106.81569506955438!3d-6.613607299586276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e2be97360f%3A0x9363c01f7d9f53e3!2sMutiara%20Kost%20Exclusive!5e0!3m2!1sid!2sid!4v1775919640198!5m2!1sid!2sid'
@@ -12,6 +12,7 @@ export const UNITS: Unit[] = [
     id: 'kamar1',
     label: 'Kamar 01',
     type: 'kamar',
+    price: 1200000,
     size: 'Luas Kamar: 7.05 m²',
     bathroomInfo: 'K. Mandi: 1.09 m²',
     features: [
@@ -45,6 +46,7 @@ export const UNITS: Unit[] = [
     id: 'kamar2',
     label: 'Kamar 02',
     type: 'kamar',
+    price: 1200000,
     size: 'Luas Kamar: 7.05 m²',
     bathroomInfo: 'K. Mandi: 1.09 m²',
     features: [
@@ -78,6 +80,7 @@ export const UNITS: Unit[] = [
     id: 'kamar3',
     label: 'Kamar 03',
     type: 'kamar',
+    price: 1200000,
     size: 'Luas Kamar: 7.05 m²',
     bathroomInfo: 'K. Mandi: 1.09 m²',
     features: [
@@ -111,6 +114,7 @@ export const UNITS: Unit[] = [
     id: 'kontrakan1',
     label: 'Kontrakan 1',
     type: 'kontrakan',
+    price: 850000,
     size: 'Luas Bangunan: 24 m²',
     bathroomInfo: 'Halaman Mandiri',
     features: [
@@ -136,6 +140,7 @@ export const UNITS: Unit[] = [
     id: 'kontrakan2',
     label: 'Kontrakan 2',
     type: 'kontrakan',
+    price: 850000,
     size: 'Luas Bangunan: 24 m²',
     bathroomInfo: 'Halaman Mandiri',
     features: [

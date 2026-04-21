@@ -18,6 +18,7 @@ export interface Unit {
   type: 'kamar' | 'kontrakan'
   size: string
   bathroomInfo: string
+  price: number 
   features: UnitFeature[]
 }
 
